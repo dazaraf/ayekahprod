@@ -13,6 +13,9 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 from pathlib import Path
 from django.core.management.utils import get_random_secret_key
 import os
+import sys
+import dj_database_url
+import django_heroku
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -146,3 +149,5 @@ MEDIA_URL = 'newsletters/'
 
 FROM_EMAIL = 'ethnoraz2@gmail.com' # replace with your address
 SENDGRID_API_KEY = "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"
+django_heroku.settings(locals())
+
