@@ -1,0 +1,20 @@
+h1 {
+    font-size: 5rem !important;
+    font-weight: 5000;
+    color: red;
+    
+}
+
+/********** banner **********/
+#banner {
+    background-size: cover;
+    border: 5mm;
+}
+
+#banner header {
+    overflow: hidden;
+}
+
+#banner header img {
+    max-width: 80px;
+}

@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+    <head>
+        <title> Email Newsletter </title>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="container">
+            <div class="col-12">
+                <h1>Sign up to receive reminders to donate!</h1>
+                <p>Others might, but we won't hit you with spam </p>
+            </div>
+            <div class="col-12">
+                {% if email %}
+                <p>A confirmation email has been sent to {{ email }}, please confirm your email</p>
+                {% endif %}
+            </div>
+            <div class="col-12">
+                {% if message %}
+                <p>Email already exists, please try again</p>
+                {% endif %}
+            </div>
+        {% if form %}
+            <div class="col-12 col-md-4">
+                <form method="post" novalidate>
+                    {% csrf_token %}
+                    {{ form }}
+                    <br>
+                    <button type="submit" class="btn btn-success">Subscribe!</button>
+                </form>
+            </div>
+        {% endif %}
+        </div>
+    </body>
+</html>
