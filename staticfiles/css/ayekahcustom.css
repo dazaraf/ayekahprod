@@ -1,0 +1,183 @@
+
+.jumbotron{
+    color:whitesmoke;
+}
+
+/* .col-md-4{
+    margin-left: 1vw;
+} */
+
+h1 {
+    font-size: 5rem !important;
+    font-weight: 5000;
+    color: white;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    
+}
+
+h2{
+    color: inherit;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+
+}
+
+#donate-button{
+    background-color: aliceblue;
+    color: black;   
+}
+
+.dudu      {
+    overflow: hidden !important;
+    color: black !important;
+    margin-right: -30% !important;
+}
+
+
+.col-md{
+    overflow: hidden !important;
+    word-wrap: break-word !important;
+}
+.mx-auto{
+    height: auto; 
+    width: auto; 
+    max-height: 15vh;
+    max-width: 15vw;
+
+}
+.font-weight-bold{
+    margin-top:6vh;
+}
+
+#test{
+    word-wrap: break-word;
+    white-space: -webkit-pre-wrap;
+}
+
+#about-desc{
+    width: inherit;
+    word-wrap:break-word;
+    margin-right:4vw;
+    margin-left: 4vw;
+}
+#donate-button{
+    position: absolute;
+}
+#signup-button{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 10px;
+}
+#heading-center{
+    display: flexbox;
+    align-items: center;
+    padding: 20px;
+}
+/********** banner **********/
+#banner {
+   min-height: 65vh;
+   
+}
+
+#banner header {
+    overflow: hidden;
+}
+
+.btn-lg{
+    background: #f6f7dc     ;
+    font-weight: bold !important;
+    background: -moz-linear-gradient(-45deg, #f6f7dc 0%, #dddddd 50%, #ffffff 51%, #ffffff 71%, #f6f8fb 100%);
+    background: -webkit-linear-gradient(-45deg, #f6f7dc 0%,#dddddd 50%,#ffffff 51%,#ffffff 71%,#f6f8fb 100%);
+    background: linear-gradient(135deg, #f6f7dc 0%,#dddddd 50%,#ffffff 51%,#ffffff 71%,#f6f8fb 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f7dc', endColorstr='#f6f8fb',GradientType=1 );
+    color:black !important;
+    background-size: 400% 400%;
+    -webkit-animation: AnimationName 3s ease infinite;
+    -moz-animation: AnimationName 3s ease infinite;
+    animation: AnimationName 3s ease infinite;S
+    -webkit-animation: AnimationName 3s ease infinite;
+    -moz-animation: AnimationName 3s ease infinite;
+    animation: AnimationName 3s ease infinite !important;
+    border: medium;
+}
+@-webkit-keyframes AnimationName {
+    0%{
+        background-position:0% 31%
+    }
+    50%{
+        background-position:100% 70%
+    }
+    100%{
+        background-position:0% 31%
+    }
+}
+@-moz-keyframes AnimationName {
+    0%{
+        background-position:0% 31%
+    }
+    50%{
+        background-position:100% 70%
+    }
+    100%{
+        background-position:0% 31%
+    }
+}
+@keyframes AnimationName {
+    0%{
+        background-position:0% 31%
+    }
+    50%{
+        background-position:100% 70%
+    }
+    100%{
+        background-position:0% 31%
+    }
+}
+
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}

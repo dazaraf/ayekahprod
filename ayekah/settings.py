@@ -32,7 +32,7 @@ SECRET_KEY = os.getenv("DJANGO_SECRET_KEY", get_random_secret_key())
 DEBUG = True
 
 ALLOWED_HOSTS = os.getenv("DJANGO_ALLOWED_HOSTS", "127.0.0.1,localhost").split(",")
-DEVELOPMENT_MODE = os.getenv("DEVELOPMENT_MODE", "False") == "True"
+DEVELOPMENT_MODE = os.getenv("DEVELOPMENT_MODE", "True") == "True"
 
 
 # Application definition
@@ -101,7 +101,7 @@ elif len(sys.argv) > 0 and sys.argv[1] != 'collectstatic':
     if os.getenv("DATABASE_URL", None) is None:
         raise Exception("DATABASE_URL environment variable not defined")
     DATABASES = {
-        "default": dj-database-url.parse(os.environ.get("DATABASE_URL")),
+        "default": dj_database_url.parse(os.environ.get("DATABASE_URL")),
     }
 
 
